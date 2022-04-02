@@ -17,7 +17,7 @@ int helper(string &inp,int n)
         for(auto it =mp.begin();it!=mp.end();it++)
         {
             if(it->second>1)
-                it->first=it->first+i;
+                it->first+=to_string(i);
         }
         for(auto y:mp)
             cout<<y<<" ";
